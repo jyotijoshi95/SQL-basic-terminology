@@ -1,0 +1,173 @@
+Question. what is SQL?
+Answer:- SQL, or Structured Query Language, is a domain-specific language used for managing and manipulating relational databases. 
+It enables tasks such as querying data, updating records, inserting new data, and defining and modifying the structure of databases (creating and deleting tables). 
+SQL is a fundamental tool in database management and is widely used across various industries for handling structured data.
+
+Question. why we need sql?
+Answer:- SQL is crucial for several reasons:
+
+1. Data Management:
+   - Enables efficient organization and storage of structured data in databases.
+
+2. Data Retrieval:
+   - Facilitates the retrieval of specific information from databases using queries.
+
+3. Data Modification:
+   - Allows for easy modification, insertion, and deletion of data in databases.
+
+4. Database Design:
+   - Aids in designing the structure of databases, defining relationships, and creating tables.
+
+5. Data Integrity:
+   - Ensures data consistency and integrity through constraints and rules.
+
+6. Data Security:
+   - Provides access control mechanisms, allowing specified users to interact with specific data.
+
+Question. write the advantage and disadvantage of SQL?
+Answer:- Advantages of SQL:
+
+1. **Data Integrity: Ensures data accuracy and consistency through constraints.
+
+2. Data Retrieval:Enables efficient and precise retrieval of data using queries.
+
+3. Structured Data Management:Provides a structured way to organize and store data.
+
+Disadvantages of SQL:
+
+1. Complex Syntax: SQL can have complex syntax, especially for more advanced queries.
+
+2. Limited Flexibility: Some database systems may limit certain functionalities.
+
+3. Performance Issues: Inefficient queries can lead to performance bottlenecks.
+
+Question.what are the data base?
+Answer:- Databases are organized collections of data that are structured and stored in a way that facilitates efficient retrieval, management, and updating. There are various types of databases, and they can be broadly categorized into different models. Here are some common types:
+
+1. Relational Databases (RDBMS):
+   - Examples: MySQL, PostgreSQL, Oracle, Microsoft SQL Server.
+   - Organize data into tables with rows and columns.
+   - Use SQL (Structured Query Language) for querying and manipulation.
+
+2. NoSQL Databases:
+   - Examples: MongoDB, Cassandra, Couchbase.
+   - Handle unstructured or semi-structured data.
+   - Provide flexible schema and scalability for large datasets.
+
+3. Object-Oriented Databases (OODBMS):
+   - Examples: db4o, ObjectDB.
+   - Store data in the form of objects, similar to object-oriented programming.
+
+4. Graph Databases:
+   - Examples: Neo4j, Amazon Neptune.
+   - Focus on relationships between data entities using graph structures.
+
+5. Document Stores:
+   - Examples: MongoDB, CouchDB.
+   - Store and retrieve data in document formats like JSON or BSON.
+
+Question. Full form of CURD?
+Answer:- The term "CURD" in the context of databases is typically a misspelling or confusion with "CRUD," which stands for:
+
+**CRUD:**
+- C: Create (Inserting or Adding new data)
+- R: Read (Querying or Retrieving data)
+- U: Update (Modifying or Editing existing data)
+- D: Delete (Removing or Deleting data)
+
+These four basic operations represent the fundamental actions performed on data in a database management system. 
+They are commonly used in the context of relational databases and are a standard set of functionalities for interacting with and managing data.
+
+Question. What is DBMS and how it diffrence from RDBMS
+Answer:- It seems there might be a slight confusion in the terminology. Let's clarify:
+
+1. RDBMS (Relational Database Management System):
+   - **Definition:** RDBMS is a type of database management system that stores data in a structured format using tables and enforces relationships between the tables.
+   - **Examples:** MySQL, PostgreSQL, Oracle, Microsoft SQL Server.
+   - **Key Features:** Tables, Rows, Columns, SQL (Structured Query Language), ACID properties (Atomicity, Consistency, Isolation, Durability).
+
+2. DDMS (Dalvik Debug Monitor Service):
+   Definition: DDMS is a tool integrated into the Android Studio IDE for debugging and analyzing Android applications. 
+It provides various features like device monitoring, logcat viewer, heap viewer, and more.
+   Key Features:Debugging, Logcat monitoring, Emulator control, Heap analysis.
+
+In summary, RDBMS is a type of database management system used for storing and managing structured data, 
+while DDMS is a tool specific to Android development for debugging and monitoring Android applications. 
+They serve different purposes in the software development lifecycle.
+
+Questions. What are the coinstrain inn sql?
+Answer:- It seems there might be a small typo in your question. I believe you meant to ask about "constraints" in SQL.
+
+In the context of databases, constraints are rules defined on a column or a set of columns in a table that enforce data integrity. Constraints ensure that the data stored in the database follows certain rules, maintaining accuracy and consistency. Here are some common types of constraints in SQL:
+
+1. Primary Key Constraint:
+   - Ensures that a column or a set of columns uniquely identifies each record in a table.
+
+2. Foreign Key Constraint:
+   - Establishes a link between data in two tables, ensuring referential integrity.
+
+3. Unique Constraint:
+   - Ensures that all values in a column or a set of columns are unique.
+
+4. Check Constraint:
+   - Specifies a condition that must be true for each row in a table.
+
+5. Default Constraint:
+   - Assigns a default value for a column if no value is provided during an INSERT operation.
+
+6. Not Null Constraint:
+   - Ensures that a column cannot contain NULL values.
+
+Constraints play a vital role in maintaining the consistency and reliability of the data in a relational database. 
+They help prevent errors, enforce business rules, and support the relationships between tables.
+
+Question. Different type of keys in sql?
+Answer:- In SQL, various types of keys are used to establish relationships between tables and ensure data integrity. Here are the different types of keys:
+
+1. Primary Key:
+   - Uniquely identifies each record in a table.
+   - Ensures that there are no duplicate values in the specified column or set of columns.
+   - Often used as a reference in other tables as a foreign key.
+
+2. Foreign Key:
+   - Establishes a link between data in two tables.
+   - Enforces referential integrity by ensuring that values in one table match values in another table's primary key.
+
+3. Unique Key:
+   - Ensures that all values in a column or a set of columns are unique.
+   - Similar to a primary key, but it can allow one NULL value.
+
+4. Super Key:
+   - A set of one or more keys that, taken together, can uniquely identify a record.
+   - It may contain more attributes than necessary to uniquely identify a record.
+
+5. Candidate Key:
+   - A minimal super key, meaning it has the minimum number of attributes required to uniquely identify a record.
+
+Question. Different type of join in sql?
+Answer:- In SQL, JOIN operations are used to combine rows from two or more tables based on a related column between them. Here are the different types of joins:
+
+1. INNER JOIN:
+   - Returns only the rows where there is a match in both tables based on the specified condition.
+   - Syntax: `SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column;`
+
+2. LEFT JOIN (or LEFT OUTER JOIN):
+   - Returns all rows from the left table and the matched rows from the right table. If there is no match, NULL values are returned for columns from the right table.
+   - Syntax: `SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column;`
+
+3. RIGHT JOIN (or RIGHT OUTER JOIN):
+   - Returns all rows from the right table and the matched rows from the left table. If there is no match, NULL values are returned for columns from the left table.
+   - Syntax: `SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column;`
+
+4. FULL JOIN (or FULL OUTER JOIN):
+   - Returns all rows when there is a match in either the left or right table. If there is no match, NULL values are returned for columns from the table without a match.
+   - Syntax: `SELECT * FROM table1 FULL JOIN table2 ON table1.column = table2.column;`
+
+5. CROSS JOIN:
+   - Returns the Cartesian product of both tables, i.e., all possible combinations of rows from both tables.
+   - Syntax: `SELECT * FROM table1 CROSS JOIN table2.
+
+
+
+
+
